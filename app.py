@@ -11,8 +11,8 @@ st.markdown("*This application uses a model of machine learning to predict the p
 
 # Loading of model
 file_path = os.path.abspath('final_model.joblib')
-model = joblib.load(filename= file_path)     
-model2 = pickle.load(open("final_model_2", "rb"))
+model = joblib.load(filename= file_path)               # load the model with joblib object
+model2 = pickle.load(open("final_model_2", "rb"))      # load the model with pickle object
 
 
 # Definition of a reference function
